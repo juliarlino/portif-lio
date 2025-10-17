@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div id="cabecalho">
+      <a href="#secao1">Início</a>
+      <a href="#secao2">Projetos</a>
+      <a href="#secao3">Contato</a>
+    </div>
+
+    <div id="secao1">
+      <img src="imagens/foto.png" width="250px" />
+      <h1>Julia Lino Schaeffer Ribeiro</h1>
+      <h2>Aluna de Desenvolvimento de Sistemas</h2>
+      <p>
+        Bem vindos ao meu portifólio! Aqui você encontra alguns dos meus
+        projetos e um pouco da minha trajetória como aluna de desenvolvimento de sistemas.
+      </p>
+      <a id="botao" href="#secao2">Ver meus projetos</a>
+    </div>
+
+    <div id="secao2">
+      <h2>Projetos</h2>
+      <p>Alguns trabalhos que desenvolvi: </p>
+
+      <div class="box-container">
+        <div class="box">
+          <h2>Portifólio Pessoal</h2>
+          <p>Meu site de apresentação profissional com informações e projetos.</p>
+          <a href="#" class="button">Ver projeto</a>
+        </div>
+
+        <div class="box">
+          <h2>Loja Virtual</h2>
+          <p>Protótipo de e-commerce com carrinho de compras em JavaScript.</p>
+          <a href="#" class="button">Ver projeto</a>
+      </div>
+
+        <div class="box">
+            <h2>Dashboard de dados</h2>
+            <p>Painel interativo para vizualização de métricas e gráficos.</p>
+            <a href="#" class="button">Ver projeto</a>
+        </div>
+    </div>
+      
+
+      <div id="secao3">
+        <h2>Contato</h2>
+        <p>Entre em contato comigo pelo WhatsApp preenchendo o formulário abaixo:</p>
+        <form id="whatsappForm">
+          <input type="text" id="nome" placeholder="Seu nome" required />
+          <input type="email" id="email" placeholder="Seu e-mail" required />
+          <textarea id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+          <button type="submit">Enviar no WhatsApp</button>
+        </form>
+
+        <div class="social-links">
+          <p>Me siga nas redes sociais</p>
+          <a href="https://youtube.com/" target="_blank">Youtube</a>
+          <a href="https://instagram.com" target="_blank">Instagram</a>
+          <a href="https://facebook.com" target="_blank">Facebook</a>
+        </div>
+      </div>
+
+    <script>
+      document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+        const nome = document.getElementById("nome").value;
+        const email = document.getElementById("email").value;
+        const mensagem = document.getElementById("mensagem").value;
+
+        const texto = `Olá, meu nome é ${nome} ${email} e gostaria de falar: ${mensagem}`;
+        const url = `https://wa.me/5527996942450?text=${encodeURIComponent(texto)}`;
+        window.open(url, "_blank");
+      });
+      
+    </script>
+  </body>
+</html>
