@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+  scroll-behavior: smooth
+}
+
+#cabecalho {
+  background-color: #9370DB;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+}
+
+#cabecalho a {
+  color: white;
+  text-decoration: none;
+  padding: 50px;
+  font-size: 20px; 
+}
+
+#secao1 {
+  padding-top: 200px;
+  text-align: center;
+  height: 800px;
+}
+
+#botao {
+  background-color: #9370DB;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  box-shadow: 5px 10px 8px #C0C0C0;
+}
+
+#secao2 {
+  padding-top: 200px;
+  height: 800px;
+  text-align: center;
+}
+
+#secao2 h2{
+  font-size: 27px;
+}
+
+.box-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  container: grid;
+  margin: 100px;
+  padding: 50px;
+  width: 70%;
+  
+}
+
+.box{
+  background-color: #9370DB;
+  border-radius: 10px;
+  padding: 10px;
+  width: 500px;
+  margin: 10px;
+  box-shadow: 5px 10px 8px #C0C0C0;
+}
+
+.box-container a{
+  text-decoration: none;
+  color: white;
+}
+
+#secao3{
+  height: 800px;
+  padding-top: 200px;
+}
+
+#secao3 input{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  width: 400px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border-color: black;
+}
+
+#secao3 textarea{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  width: 400px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border-color: black
+}
+
+#secao3 button{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  width: 400px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  border-color: black;
+}
+
+.social-links p{
+  font-size: 25px;
+}
+
+.social-links a{
+  text-decoration: none;
+  font-size: 20px;
+  margin: 10px;
+}
+
